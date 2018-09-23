@@ -86,7 +86,7 @@ function example2() {
 }
 ```
 
-The most important difference between function declarations and `let` statements is that the entirety of the function declaration gets hoisted to the top, whereas only the `let name` part of `let name = value;` statement gets hoisted. This is why when trying to read from `a` in `example2` there is an error stating that `a` is not definied.
+The most important difference between function declarations and `let` statements is that the entirety of the function declaration gets hoisted to the top, whereas only the `let name` part of `let name = value;` statement gets hoisted. This is why when trying to read from `a` in `example2` there is an error stating that `a` is not defined.
 
 ### Hoisting, altogether
 
@@ -94,13 +94,13 @@ The most important difference between function declarations and `let` statements
 function example3() { 
     let a = 20; 
     alert(a);
-    function a() {
+    function a() { //there
         return 100;
     }
 }
 example3();
 ```
-The above code is invalid. Firstly, function declarations are hoisted. Then, `let` statements are hoisted. So the above code would look like this after hoisting:
+It looks like the code above should alert 20, and then raise an error due to redeclaring `a` at `there`. But firstly, function declarations are hoisted. Then, `let` statements are hoisted. So the above code would look like this after hoisting:
 ```javascript
 function example3() { 
     function a() { //function declarations moved to the top first
@@ -113,7 +113,7 @@ function example3() {
 }
 example3();
 ```
-As can be seen now, function `a` has already been declared and so cannot be declared again, resulting in an error.
+As can be seen now, function `a` has already been declared and so cannot be declared again, resulting in an error before the alert can happen.
 
 # Intricies of the `for` statement
 First things first. A `for` statement in ES2015: 
