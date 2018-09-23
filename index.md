@@ -86,7 +86,7 @@ function example2() {
 }
 ```
 
-The most important difference between function declarations and `let` statements is that the entirety of the function declaration gets hoisted to the top, whereas only the `let name` part of `let name = value;` statement gets hoisted. This is why when trying to read from `a` in `example2` there is an error stating that `a` has already been declared.
+The most important difference between function declarations and `let` statements is that the entirety of the function declaration gets hoisted to the top, whereas only the `let name` part of `let name = value;` statement gets hoisted. This is why when trying to read from `a` in `example2` there is an error stating that `a` is not definied.
 
 ### Hoisting, altogether
 
