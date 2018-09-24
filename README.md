@@ -15,6 +15,7 @@ If not, and you want to know the history and motivations behind these wonderful 
 Or perhaps you would like to first know about some brief Javscript history? Then it is my honour if you choose to read on.
 # A Brief History of Javascript 
 ## Why Javascript looks like Java (but isn't like Java at all)
+
 | Java          | Javascript    |
 | ------------- |---------------|
 | Strongly typed| Weakly typed  |
