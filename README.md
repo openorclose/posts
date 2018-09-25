@@ -49,7 +49,7 @@ Amen.
 
 It is safe to say that one of the requirements for perfection is imperfection. 
 
-Even more so when imperfections are left alone, not afraid to be judged.
+Even more so when imperfections are left alone, unafraid of being judged.
 
 Because fixing a language is easy, but fixing human laziness is not.
 
