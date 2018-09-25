@@ -49,17 +49,17 @@ Amen.
 
 It is safe to say that one of the requirements for perfection is imperfection. 
 
-Even more so when the imperfection is openly recognised and not hastily patched up.
+Even more so when imperfections are left alone, not afraid to be judged.
 
-Because patching up a language is easy, but patching up human laziness is not.
+Because fixing a language is easy, but fixing human laziness is not.
 
 ### The == operator
 
 The `==` operator is so well known and well laughed at by everyone that I did not bother explaining it. Just use `===`. 
 
-The `==` operator has a million rules to remember, and a possible motivation of such insanity was to have programming amatuers more willing to take a step into the language and start creating dynamic pages.
+`==` has a million rules to remember, and a possible motivation of such insanity was to have programming amatuers more willing to take a step into the language and start creating dynamic pages.
 
-For example, a simple game where a user had to guess the mystery number:
+For example, a simple game where a user has to guess the mystery number:
 
 ```javascript
 // Days of this are long gone thankfully
@@ -79,7 +79,7 @@ Ok, perhaps it's not that simple since Netscape and Internet Explorer both did t
 
 ### Automatic Semicolon Insertion
 
-Also noteworthy in the above example is the lack of semicolons, and why `inputField` can be accessed when it is supposedly only defined within the `if` statements. 
+Also noteworthy in the above example is the lack of semicolons. 
 
 Javascript, like with the `==` operator, will try to guess where a semicolon should be and insert it in for you. Of course there are times when results are unexpected, especially if you come from a C background where the wrong style guide is used: 
 
@@ -100,13 +100,15 @@ It will probably never be removed from the language, as it might break old sites
 
 ### Introduction of new reserved words in ES2015
 
-Javascript introduced [block scope](blockscope.md) in ES2015. Not by changing `var`, as usual, but by the introduction of a new keyword `let`. `let` was never one of the reserved keywords pre-ES2015, so defining a variable named `let` like `var let = "let";` was definitely possible. What happens if you do exactly that in 2018? `let` is a reserved keyword, so an error should rightfully be thrown no?
+One last weirdness in the mystery number guesser example is why `inputField` can be accessed when it is only defined inside the `if` statements. Read the section on scopes to find out more. 
+
+Anyway, people wanted defined variables to be scoped within their block, and Javascript introduced [block scope](blockscope.md) in ES2015. Not by changing `var`, as usual, but by the introduction of a new keyword `let`. `let` was never one of the reserved keywords pre-ES2015, so defining a variable named `let` like `var let = "let";` was definitely possible. What happens if you do exactly that in 2018? `let` is a reserved keyword, so an error should rightfully be thrown no?
 
 Alas, remember that Javascript does not like for tabled sites of the past to stop working. So the new keywords that were introduced (such as `let`) are only half-reserved. They can still be used as variable names and identifiers without causing an error. (Please don't do this though.)
 
-### Possible uture explicit tail call optimisations
+### Possible future explicit tail call optimisations
 
-ES2015 has proper automatic tail call optimisation in its specifications, but as of 2018, only Safari supports it. Chrome even removed support for it many versions back, and instead backed a proposal to introduce optmisations only when _explicitly_ requested:
+ES2015 has proper automatic tail call optimisation in its specification, but as of 2018, only Safari supports it. Chrome even removed support for it many versions back, and instead backed a proposal to introduce optmisations only when _explicitly_ requested:
 
 ```javascript
 function factorial(n, acc = 1) {
