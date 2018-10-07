@@ -15,7 +15,7 @@ for (i = 0; i < 5; i++) {
 ```
 Output:
 ```
-(wait 1s)
+
 > 5
 (wait 1s)
 > 5
@@ -29,7 +29,7 @@ Output:
 
 The code does delay the output. But they all display 5 instead of 0, 1, 2, 3, 4 as intended!?
 
-This is because `i` is declared outside the for loop, and thus when its value is looked after 1s+ in each alert call, the only scope that `i` exists in is outside the loop, and since the loop has already finished executing `i` will have a value 5 for all `console.log` calls. 
+This is because `i` is declared outside the for loop, and thus when its value is looked after 1s+ in each `console.log` call, the only scope that `i` exists in is outside the loop, and since the loop has already finished executing `i` will have a value 5 for all `console.log` calls. 
 
 This is why we put the declaration inside the for loop, so it works as intended:
 
