@@ -1,16 +1,10 @@
 # Javsacript: In-depth Workings of Basic Features
 Javascript has touched the hearts of many (myself included), and thus it is to my great disappointment that there are people out there who fail to grasp its true beauty. To them, it is but a tool to add simple dynamism to a website, some code to copy and paste to generate ad revenue, or worse; they project their preconceptions about how _other_ programming languages work onto Javascript, and then have the gall to complain about how their perfect code does not run as they intended. 
 
-If you just want the TLDR of certain behaviour and not listen to my stack overflowing preambles, follow these links (but I will hate you): 
+If you want to skip ahead to certain behaviour and not listen to my stack overflowing preambles, follow these links:
 - [Scopes and Closures in Javascript](scopesclosures.md)
 - [Hoisting](hoisting.md)
 - [The For Statement](for.md)
-
-If not, and you want to know the history and motivations behind these wonderful quirks of Javascript, follow these instead (and I will love you):
-
-- [Scopes and Closures in Javascript (In depth)](indepth/scopesclosures.html)
-- [Hoisting (In depth)](indepth/hoisting.html)
-- [The For Statement (In depth)](indepth/for.html)
 
 Or perhaps you would like to first know about some brief Javscript history? Then it is my honour to have you read on.
 # A Brief History of Javascript (Personally Filtered by Me)
@@ -23,7 +17,7 @@ Or perhaps you would like to first know about some brief Javscript history? Then
 | Compiled      | Interpreted   |
 | Bad           | Good          |
 
-The table of their differences goes on forever, being similar in only one aspect: syntax. 
+Their table of differences goes on forever, being similar in only one aspect: syntax. 
 
 Brendan Eich, the creator of Javascript, was tasked to embed Scheme into Netscape Navigator, but Netscape also had a collaboration with Sun, where they decided to include Java in their browser as well. So, they wanted this new language to have Java-like syntax as well. And so, Javascript inherited Java's syntax, thankfully without its bad parts.
 
