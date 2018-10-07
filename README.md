@@ -57,19 +57,19 @@ For example, a simple game where a user has to guess the mystery number:
 
 ```javascript
 // Days of this are long gone thankfully
-if (document.getElementById) {
-    var inputField = document.getElementById("inputfield")
-} else if (document.all) {
-    var inputField = document.all.inputfield
+if (document.all) {
+    var inputField = document.all.inputField    
 } else if (document.layers) {
     var inputField = document.inputField
+} else if (document.getElementById) {    
+    var inputField = document.getElementById("inputField")
 } else {
     //too bad? later will have NullPointerException or segmentation fault.
 }
-alert(inputField.value == 12345)
+alert(inputField.value == 12345 ? "WIN (:" : "lose ):")
 ```
 
-Ok, perhaps it's not that simple since Netscape and Internet Explorer both did their own thing for a while. But the point is, the value of an input field is a string, but the mystery number is a number. Probably to "make things easier", the interpreter would try and convert one side or the other to get an equality. Eventually, it was realised that the `==` operator was a bad idea, and thus `===` the strict equality operator was introduced. Note that `==` was never redefined. This was a conscious decision to not break archaic code on the web, and this reason still continues to dictate how future versions of Javascript are defined. 
+Ok, perhaps it's not that simple since Netscape and Internet Explorer both did their own thing for a while. But the point is, the value of an input field is a string, but the mystery number is a number. Probably to "make things easier", the interpreter would try and convert one side or the other to get an equality. Eventually, it was realised that the `==` operator was a bad idea, and thus `===` the strict equality operator was introduced. Note that `==` was never redefined. This was a conscious decision to not break archaic code on the web, and this reason still continues to dictate how future versions of Javascript are defined.
 
 ### Automatic Semicolon Insertion
 
@@ -94,11 +94,15 @@ It will probably never be removed from the language, as it might break old sites
 
 ### Introduction of new reserved words in ES2015
 
-One last weirdness in the mystery number guesser example is why `inputField` can be accessed when it is only defined inside the `if` statements. Read the section on scopes to find out more. 
+The penultimate weirdness in the mystery number guesser example is why `inputField` can be accessed when it is only defined inside the `if` statements. Read the section on scopes to find out more. 
 
 Anyway, people wanted defined variables to be scoped within their block, and Javascript introduced [block scope](blockscope.md) in ES2015. Not by changing `var`, as usual, but by the introduction of a new keyword `let`. `let` was never one of the reserved keywords pre-ES2015, so defining a variable named `let` like `var let = "let";` was definitely possible. What happens if you do exactly that in 2018? `let` is a reserved keyword, so an error should rightfully be thrown no?
 
 Alas, remember that Javascript does not like for tabled sites of the past to stop working. So the new keywords that were introduced (such as `let`) are only half-reserved. They can still be used as variable names and identifiers without causing an error. (Please don't do this though.)
+
+### `Boolean(document.all) === false`???
+
+Now the (hopefully) last-mind bending gotcha in the dated example above is the use of `document.all`. `document.all' is deprecated, but is unfortunately still supported by most? browsers. But how do browsers force sites that have no sense and choose to put outdated technology at the top of their `if` statements and the more advanced stuff at the bottom? Clearly, by making `document.all` be a falsy value. Its the only exception in the Ecmascript specifications. All objects are truthy, except for `document.all`. Remember this in case some crazy guy decides to have a Javascript quiz, assigns `document.all` to a random variable `x`, `console.log`s `x` and then asks what `Boolean(x)` should return. Some crazy guy.
 
 ### Possible future explicit tail call optimisations
 
