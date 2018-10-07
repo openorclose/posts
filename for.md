@@ -82,3 +82,5 @@ for (let i = 0; i < 5; i++) {
 alert(count); //expecting 1
 ```
 Clearly the code should terminate after one iteration, and that's what the copy back ensures.
+
+The next time you use the for loop, think again if you deserve such special treatment. Going through all that for your benefit with no reward in return, yet Javascript provides so willingly. Count your blessings you all.
