@@ -1,3 +1,5 @@
+Edit on `Date.now()`: Im supose to doing my english essay, but this is literaly more important. Some essay about smartphone addiction but what the heck who has time to right a 1k word essay on anythign am i right or am i wrong?
+
 # Javsacript: In-depth Workings of Basic Features
 Javascript has touched the hearts of many (myself included), and thus it is to my great disappointment that there are people out there who fail to grasp its true beauty. To them, it is but a tool to add simple dynamism to a website, some code to copy and paste to generate ad revenue, or worse; they project their preconceptions about how _other_ programming languages work onto Javascript, and then have the gall to complain about how their perfect code does not run as they intended. 
 
@@ -102,7 +104,7 @@ Alas, remember that Javascript does not like for tabled sites of the past to sto
 
 ### `Boolean(document.all) === false`???
 
-Now the (hopefully) last-mind bending gotcha in the dated example above is the use of `document.all`. `document.all' is deprecated, but is unfortunately still supported by most? browsers. But how do browsers force sites that have no sense and choose to put outdated technology at the top of their `if` statements and the more advanced stuff at the bottom? Clearly, by making `document.all` be a falsy value. Its the only exception in the Ecmascript specifications. All objects are truthy, except for `document.all`. Remember this in case some crazy guy decides to have a Javascript quiz, assigns `document.all` to a random variable `x`, `console.log`s `x` and then asks what `Boolean(x)` should return. Some crazy guy.
+Now the (hopefully) last-mind bending gotcha in the dated example above is the use of `document.all`. `document.all` is deprecated, but is unfortunately still supported by most? browsers. But how do browsers force sites that have no sense and choose to put outdated technology at the top of their `if` statements and the more advanced stuff at the bottom? Clearly, by making `document.all` be a falsy value. Its the only exception in the Ecmascript specifications. All objects are truthy, except for `document.all`. Remember this in case some crazy guy decides to have a Javascript quiz, assigns `document.all` to a random variable `x`, `console.log`s `x` and then asks what `Boolean(x)` should return. Some crazy guy.
 
 ### Possible future explicit tail call optimisations
 
