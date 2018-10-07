@@ -1,54 +1,78 @@
 # Intricacies of the `for` statement
 First things first. A `for` statement in ES2015: 
 ```javascript
-let i = 0; // we could declare i in the for loop, but just hold on
+let i = 0; // yes, i is normally declared in the for, but just wait.
 for (i = 0; i < 5; i++) {
-    alert(i);
+    console.log(i);
 }
 ```
-The above code correctly alerts out 0 to 4 in order. But what if we want to alert them with a 1s interval between each? We might try :
+The above code correctly logs 0 to 4 in order. But what if we want to wait one second between each `console.log`? We might try :
 ```javascript
-let i = 0; // we could declare i in the for loop, but just hold on
+let i = 0; // ditto
 for (i = 0; i < 5; i++) {
-    setTimeout(() => alert(i), i * 1000);
+    setTimeout(() => console.log(i), i * 1000);
 }
 ```
-The above code does correctly alert at intervals of 1s between. But they all alert 5 instead of 0, 1, 2, 3, 4 as intended! This is because `i` is declared outside the for loop, and thus when its value is required after 1s+ in each alert call, the loop has already finished executing and `i` will be 5 for all alerts. 
+Output:
+```
+(wait 1s)
+> 5
+(wait 1s)
+> 5
+(wait 1s)
+> 5
+(wait 1s)
+> 5
+(wait 1s)
+> 5
+```
+
+The code does delay the output. But they all display 5 instead of 0, 1, 2, 3, 4 as intended!?
+
+This is because `i` is declared outside the for loop, and thus when its value is looked after 1s+ in each alert call, the only scope that `i` exists in is outside the loop, and since the loop has already finished executing `i` will have a value 5 for all `console.log` calls. 
 
 This is why we put the declaration inside the for loop, so it works as intended:
 
 ```javascript
 for (let i = 0; i < 5; i++) {
-    setTimeout(() => alert(i), i * 1000);
+    setTimeout(() => console.log(i), i * 1000);
 }
 ```
 
 But why does this work? What value of `i` does each alert refer to when being called? The answer is that ES2015 does a bit of magic to ensure that these type of callbacks that are frequently used work as people imagine it to.
 
+(Edit: My sincerest apologies. I previously thought that there was no way to present the copying of i into the for body scope in pure Javascript. But just like Javascript makes mistakes, I make them too. Thankfully I discovered this myself. (Mostly because I think only one other person has bin reading this multi-parted love letter and he doesn't suck up to Javascript enough. Does his ingorance of Javascript pain me more than the potential embarrassment he may have delivered? That's a story for another day.) I am thusly spared from to bow down to another being pointing out my faults. Phew. A glimpse into my shameful past is always available courtesy of version control, should you be the type of person who enjoys partaking in schadenfreude.)
+
+For loop with declaration of variables converted into a for loop without declaration in the `for` parentheses.
+**WARNING: This only applies to variables declared with `let` and `const`. For `var` no matter where you declare the variables they'll always be hoisted up to the neearest function scope remember? Check out [scopes.md](scopes) if you don't.**
 ```javascript
-for (let i = 0; i < 5; i++) {
-    interpreter: let i = copy of original i;
-    {//new block for the body of the loop
-        setTimeout(() => alert(i), i * 1000);
+{
+    let i;
+    for (i = 0; i < 5; i++) {
+        const copyOfI = i; // first we get a copy of i...
+        // note that we cannot redeclare i here (it is done below instead)
+        // because we want to copy copyOfI back into i in the end
+        // and if we do redeclare i here we cannot access the original i...
+        { // so we create a new block here so that we can redeclare i.... 
+            let i = copyOfI; // finally we can redeclare i here...
+            // also note that we cannot just dump the loop of the body here
+            // instead of another scope below.
+            // because if we did then it would be impossible to declare a new i 
+            // in the body. (why someone would do that is out of my understanding though, but you can.)
+            { // new block for the body of the loop so that people can declare another i if they are crazy
+                // LINE A: const i = "I don't care about the loop i, because i am more important!" //This is possible
+                setTimeout(() => alert(i), i * 1000); //If you uncomment the previous line i would be that string above.
+            }
+            copyOfI = i; // we copy the value of i back into the copyOfI.
+            // note that if someone /did/ redeclare i in LINE A, the i in 
+            // this scope would be unchanged, and will not screw up the loop.
+        }
+        i = copyOfI; // finally. put copyOfI back into i. finally.
     }
-    interpreter: copy the newly copied version of i back into the original i;
 }
 ```
 
-The interpreter creates a completely new copy of `i` at each iteration for the body of the loop to use, so that it has its own `i` to refer to if needed after the loop has finished executing. Note that it is impossible to represent what the interpreter does perfectly in ES2015 code, and so I had to explain it in words.
-
-Also note the new block that is created. This is because one can actually declare `i` again in the body of the loop; it is just another scope after all!
-```javascript
-let count = 0;
-for (let i = 0; i < 5; i++) {
-    let i = "Random stuff";
-    count++;
-}
-alert(count) //expecting 5
-```
-And so the above code would still run.
-
-And lastly, as to why the interpreter needs to copy the copied version of `i` back into the original `i`, here is why: 
+As to why the interpreter needs to copy the copied version of `i` back into the original `i`, here is why: 
 ```javascript
 let count = 0;
 for (let i = 0; i < 5; i++) {
