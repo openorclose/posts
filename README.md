@@ -102,9 +102,9 @@ Anyway, people wanted defined variables to be scoped within their block, and Jav
 
 Alas, remember that Javascript does not like for tabled sites of the past to stop working. So the new keywords that were introduced (such as `let`) are only half-reserved. They can still be used as variable names and identifiers without causing an error. (Please don't do this though.)
 
-### `Boolean(document.all) === false`???
+### Boolean(document.all) === false???
 
-Now the (hopefully) last-mind bending gotcha in the dated example above is the use of `document.all`. `document.all` is deprecated, but is unfortunately still supported by most? browsers. But how do browsers force sites that have no sense and choose to put outdated technology at the top of their `if` statements and the more advanced stuff at the bottom? Clearly, by making `document.all` be a falsy value. Its the only exception in the Ecmascript specifications. All objects are truthy, except for `document.all`. Remember this in case some crazy guy decides to have a Javascript quiz, assigns `document.all` to a random variable `x`, `console.log`s `x` and then asks what `Boolean(x)` should return. Some crazy guy.
+Now the (hopefully) last-mind bending gotcha in the dated example above is the use of `document.all`. `document.all` is deprecated, but is unfortunately still supported by most? browsers. But how do browsers handle sites that have no sense and choose to check for outdated technology at the top of their `if` statements and leave the more advanced stuff for later? Clearly, by making `document.all` be a falsy value. It's the only exception in the Ecmascript specifications. All objects are truthy, except for `document.all`. Remember this in case some crazy guy decides to have a Javascript quiz, assigns `document.all` to a variable `x`, `console.log`s `x` and then asks what `Boolean(x)` should return. Some crazy guy.
 
 ### Possible future explicit tail call optimisations
 
