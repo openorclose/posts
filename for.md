@@ -1,4 +1,4 @@
-# Magic of the `for` statement post ES2015
+# The magical `for` statement
 First things first. A `for` statement in ES2015: 
 ```javascript
 let i = 0; // yes, i is normally declared in the for, but just wait.
