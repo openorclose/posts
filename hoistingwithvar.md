@@ -45,11 +45,11 @@ display(a); //displays Hello
 
 What about when a is declared in two different block-scopes? The interpreter finds `a` in the inner scope, thus uses its value of `World`. Since the value is already found, the value of `a` in the outer scope does not matter as it will never be accessed.
 
-`let`, `const`, and function declarations are all block-scoped. Also, from now on, when I refer to `let`, I mean both `let` and `const`, since the follow basically the same rules with regard to scopes and hoisting.
+`let`, `const`, and function declarations are all block-scoped. Also, from now on, when I refer to `let`, I mean both `let` and `const`, since they follow basically the same rules with regard to scopes and hoisting.
 
 ## Function scope
 
-```
+```javascript
 //outer scope
 function f() {
     //f scope
@@ -69,7 +69,7 @@ Note that it never looks into if scope for `a` since Line A was never part of th
 
 What if we change from using `let` to `var`, however?
 
-```
+```javascript
 //outer scope
 function f() {
     //f function scope. a is accessible anywhere in this function!
@@ -162,19 +162,19 @@ Reading the code line by line, one might expect `example2` to first alert 1 and 
 let a = 1;
 function example2() { 
     let a; //hoisting, note that only the declaration but not the assigment is hoisted.
-    alert(a);
+    alert(a); //ReferenceError, a is not defined.
     
     a = 20; //now a is being assigned.
     alert(a);
 }
 ```
 
-The most important difference between function declarations and `let` statements is that the entirety of the function declaration gets hoisted to the top, whereas only the `let name` part of `let name = value;` statement gets hoisted. This is why when trying to read from `a` in `example2` there is an error stating that `a` is not defined.
+The most important difference between function declarations and `let` statements is that the entirety of the function declaration gets hoisted to the top, whereas only the `let name` part of `let name = value;` statement gets hoisted. This is why when trying to read from `a` in `example2` there is ReferenceError stating that `a` is not defined.
 
 ### Hoisting: `var` Declarations
 ```javascript
 var a = 1;
-function example2() { 
+function examplevar() { 
     alert(a); //this returns undefined
     if (false) { //this will never be true
         var a = false;
@@ -185,9 +185,9 @@ function example2() {
 ```javascript
 var a;
 a = 1;
-function example2() {
+function examplevar() {
     var a;
-    alert(a); //this alerts undefined
+    alert(a); //this alerts undefined, not ReferenceError
     if (false) { //this will never be true
         a = false; //hoist to the top of the nearest function
     }
