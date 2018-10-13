@@ -47,23 +47,21 @@ My mother taught me from young to only concentrate on one thing at a time, if no
 
 I did not like focusing, but neither did i like not focusing stuck inside a cell, thus no force on this Earth would ever stop me from completing my mission.
 
-Not even when I received a new task seemingly from God. Look up immediately. I don't know if his command was lost in translation, from ancient Hebrew to modern Javascript the long way round, because in my world immediately meant the same thing as a tech support ticket marked Urgent. Relax, the subconscious in me prayed, I got this.
+Not even when I received a new task seemingly from God. Look up immediately. I don't know if his command was lost in translation, from ancient Hebrew to modern Javascript, because in my world immediately meant the same thing as a tech support ticket marked Urgent. Relax, the subconscious in me prayed, I got this.
 
-An arbitrary amount of time later, I was finally in school. No time to dally though, and I carried out my next set of instructions.
+A negligible amount of time later, I was finally in school. No time to dally though, and I carried out my next set of instructions.
 
 I looked up. Just as heaven mandated. What, I amenned. It was just a lonely 5 floating above me in the sky. Big deal. And to think God created the heavens just to have a 5 in it. I mean I _was_ 5 once, does that make me God? 
 
-I had no more items on my agenda, and so took the chance to venture into the unknown. Making friends. Throughout the course of my day, I met many people. 4 of them, to be precise. Short or long or whatever they appeared to be, all of them had one thing in common. They, like me, had received the exact same words from God but each one second apart from the other. But they, like me, were also told by their mothers that they had to concentrate on one thing at a time, if not the police would come and catch them. 
+I had no more items on my agenda, and so took the chance to venture into the unknown. Making friends. 4 of them, to be precise. Short or long or whatever they appeared to be, all of them had one thing in common. They, like me, had received the exact same words from God but each mysteriously to only do so one second apart from another. But they, like me, were also told by their mothers that they had to concentrate on one thing at a time, if not the police would come and catch them. 
 
-And so after finishing up what they were doing, when they all so dutifully looked up into the once diverse sky containing a multitude of numbers, only the singleton 5 remained. 
+And so after finishing up what they were doing in a negligible amount of time, and after their required waiting perioud, when they all so dutifully looked up into the once diverse sky containing a multitude of numbers, only the singleton 5 remained. 
 
-Who knew that the spectacular parade of numbers of all races and religions could have taken place while we were busy doing our own things.
+Who knew that the spectacular parade of numbers of all races and religions took while we were busy doing our own things.
 
 Who knew that digits had the capability to give up on waiting for people to look them up.
 
-Who knew that after the fireworks of incrementation only one ostracised value 5 would remain.
-
-Who knew that when we finally looked up the value we got the same results.
+Who knew that after the fireworks of incrementation only one victorious 5 would remain, the others vanquished in addition.
 
 ------
 
