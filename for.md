@@ -55,13 +55,13 @@ I looked up. Just as heaven mandated. What, I amenned. It was just a lonely 5 fl
 
 I had no more items on my agenda, and so took the chance to venture into the unknown. Making friends. 4 of them, to be precise. Short or long or whatever they appeared to be, all of them had one thing in common. They, like me, had received the exact same words from God but each mysteriously to only do so one second apart from another. But they, like me, were also told by their mothers that they had to concentrate on one thing at a time, if not the police would come and catch them. 
 
-And so after finishing up what they were doing in a negligible amount of time, and after their required waiting perioud, when they all so dutifully looked up into the once diverse sky containing a multitude of numbers, only the singleton 5 remained. 
+And so after finishing up what they were doing in a negligible amount of time, and after their required waiting period, when they all so dutifully looked up into the once diverse sky containing a multitude of numbers, only the singleton 5 remained. 
 
-Who knew that the spectacular parade of numbers of all races and religions took place while we were busy doing our own things.
+Who knew that the spectacular parade of numbers of all races and religions had taken place while we were busy doing our own things.
 
 Who knew that digits had the capability to give up on waiting for people to look them up.
 
-Who knew that after the fireworks of incrementation only one victorious 5 would remain, the others vanquished in addition.
+Who knew that after the fireworks of incrementation only one victorious 5 would remain, the others vanquished in addition, never to grace anyone as God had intended.
 
 ------
 
