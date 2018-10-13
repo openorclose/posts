@@ -41,7 +41,7 @@ Perhaps his greatest concern was how `setTimeout` worked, in particular why `set
 
 --------
 
-On one wind peaceful and sun beautiful day, with varying numbers forlicking about in the sky prancing and looping about, I stepped with light and fast footsteps and headed to school. That's what my teacher told me to do at least, and so I did. 
+On one wind peaceful and sun beautiful day, with varying numbers forlicking about in the sky prancing and looping around, I stepped with light and fast footsteps and headed to school. That's what my teacher told me to do at least, and so I did. 
 
 My mother taught me from young to only concentrate on one thing at a time, if not the police would come and catch me. 
 
