@@ -57,7 +57,7 @@ I had no more items on my agenda, and so took the chance to venture into the unk
 
 And so after finishing up what they were doing in a negligible amount of time, and after their required waiting period, when they all so dutifully looked up into the once diverse sky containing a multitude of numbers, only the singleton 5 remained. 
 
-Who knew that the spectacular parade of numbers of all races and religions had taken place while we were busy doing our own things.
+Who knew that the spectacular parade of numbers of all numerators and denominators had taken place while we were busy doing our own things.
 
 Who knew that digits had the capability to give up on waiting for people to look them up.
 
