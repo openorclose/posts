@@ -5,24 +5,35 @@ A long long time ago, there were only
 | Properties \ Function type | Declaration | Expression  | Arrow |
 | -------------------------- | ----------- | ----------- | ----- |
 | Named?                     | Yes         | Your choice | No    |
-| Expression?                | No          | No          | No    |
+| Expression?                | No          | Yes         | Yes   |
 | `this`                     | Own         | Own     | Inherited |
 
 
 ## Function Declarations
 
-## Function Expressions
-
-Looks can be deceiving. And they certainly are especially for newcomers to javascript. They can look eerily the same as function declarations:
+This is probably the first type of functions that learners of Javascript will be introduced to, especially when coming from Java or C.
 
 ```javascript
-const functionExpression = function name(param1, param2, ..., paramN) {
+function functionName(param1, param2, ..., paramN) {
   statements;
   return expression;
 }
 ```
 
-Ignoring the constant declaration, the _expression_ on the right is exactly the same as a function declaration that declares a function named `name`! 
+And then they will learn that this code creates a function named `functionName` that can optionally do stuff with parameters and subsequently return a value. (If no return value is specified the function will be treated as if its last line was `return undefined` and return `undefined`.) (Also, function declarations are [hoisted](hoisting.md) up to the top of its block scope, whereas function expressions and arrow functions are just that, expressions, and are treated the same as you would treat any other expression like `42`, `alert`, `"a string"`, `null`, etc etc and do not get hoisted anywhere.)
+
+## Function Expressions
+
+Looks can be deceiving. And they certainly are especially for newcomers to javascript. Function expressions can look eerily similar to function declarations:
+
+```javascript
+const functionExpression = function namedFunctionExpression(param1, param2, ..., paramN) {
+  statements;
+  return expression;
+}
+```
+
+Ignoring the constant declaration, the _expression_ on the right is exactly the same as a function declaration that declares a function named `namedFunctionExpression`! 
 
 
 ## Arrow Functions
