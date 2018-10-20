@@ -3,6 +3,7 @@
 A long long time ago, there were only 
 
 | Properties \ Function type | Declaration | Expression  | Arrow |
+| -------------------------- | ----------- | ----------- | ----- |
 | Named?                     | Yes         | Your choice | No    |
 | Expression?                | No          | No          | No    |
 | `this`                     | Own         | Own     | Inherited |
