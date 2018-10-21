@@ -82,7 +82,7 @@ But why does this work? What value of `i` does each alert refer to when being ca
 ## Rough conversion of for loop with declaration
 
 For loop with declaration of variables converted into a for loop without declaration in the `for` parentheses.
-**WARNING: This only applies to variables declared with `let` and `const`. For `var` no matter where you declare the variables they'll always be hoisted up to the nearest function scope remember? Check out [scopes.md](scopes) if you don't.**
+**WARNING: This only applies to variables declared with `let` and `const`. For `var` no matter where you declare the variables they'll always be hoisted up to the nearest function scope remember? Check out [hoistingwithvar.md](scopes) if you don't.**
 ```javascript
 {
     let i;
