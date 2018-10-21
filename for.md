@@ -79,6 +79,8 @@ But why does this work? What value of `i` does each alert refer to when being ca
 
 (Edit: My sincerest apologies. I previously thought that there was no way to present the copying of i into the for body scope in pure Javascript. But just like Javascript makes mistakes, I make them too. Thankfully I discovered this myself. (Mostly because I think only one other person has bin reading this multi-parted love letter and he doesn't suck up to Javascript enough. Does his ignorance of Javascript pain me more than the potential embarrassment he may have delivered? That's a story for another day.) I am thusly spared from bowing down to another being pointing out my faults. Phew. A glimpse into my shameful past is always available courtesy of version control, should you be the type of person who enjoys partaking in schadenfreude.)
 
+## Rough conversion of for loop with declaration
+
 For loop with declaration of variables converted into a for loop without declaration in the `for` parentheses.
 **WARNING: This only applies to variables declared with `let` and `const`. For `var` no matter where you declare the variables they'll always be hoisted up to the nearest function scope remember? Check out [scopes.md](scopes) if you don't.**
 ```javascript
