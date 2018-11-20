@@ -7,6 +7,8 @@ If you want to skip ahead to certain behaviour and not listen to my stack overfl
 - [Scopes and Closures in Javascript](scopesclosures.md)
 - [Hoisting](hoisting.md)
 - [The For Statement](for.md)
+- [Automatic Semicolon Insertion](;.md)
+- [Functions: The Holy Trinity](functions.md)
 
 Or perhaps you would like to first know about some brief Javscript history? Then it is my honour to have you read on.
 # A Brief History of Javascript (Personally Filtered by Me)
