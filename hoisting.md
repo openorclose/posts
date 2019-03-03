@@ -5,7 +5,7 @@
 A simple but not technically robust explanation of block scope is this: A block scope is defined by an opening `{` and a closing `}`, such as in `if`, `while` statements or function declarations. Whenever I say scope, I am referring to the block scope.
 
 ## Hoisting
-To keep things simple, I'm not going to be discussing `var` declarations for now, as they're a remnant of pre-ES5 days and kept to maintain backwards compatability. I'll only be discussing declarations using `const`, `let`, and `function functionName(param) {}`.
+To keep things simple, I'm not going to be discussing `var` declarations for now, as they're a remnant of pre-ES2k15 days and kept to maintain backwards compatability. I'll only be discussing declarations using `const`, `let`, and `function functionName(param) {}`.
 
 ### The basics
 
