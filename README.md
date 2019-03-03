@@ -2,7 +2,7 @@
 Javascript has touched the hearts of many (myself included), and thus it is to my great disappointment that there are people out there who fail to grasp its true beauty. To them, it is but a tool to add simple dynamism to a website, some code to copy and paste to generate ad revenue, or worse; they project their preconceptions about how _other_ programming languages work onto Javascript, and then have the gall to complain about how their perfect code does not run as they intended. 
 
 If you want to skip ahead to certain behaviour and not listen to my stack overflowing preambles, follow these links:
-- [Scopes and Closures in Javascript](scopesclosures.md)
+- [Scopes and Closures in Javascript](hoistingwithvar.md)
 - [Hoisting](hoisting.md)
 - [The For Statement](for.md)
 - [Automatic Semicolon Insertion](;.md)
